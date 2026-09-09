@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabel Data Mahasiswa</title>
+  </head>
+  <body>
+    <h1>Nilai Praktikum Mahasiswa</h1>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">No.</th>
+          <th rowspan="2">Nama</th>
+          <th colspan="2">Nilai</th>
+        </tr>
+        <tr>
+          <th>Tugas</th>
+          <th>Praktikum</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alya Putri</td>
+          <td>85</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bima Saputra</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Rata-rata</strong></td>
+          <td>86</td>
+          <td>91</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" cellpadding="8" cellspacing="4">
+      <thead>
+        <tr>
+          <th rowspan="2">No.</th>
+          <th rowspan="2">Nama Project</th>
+          <th colspan="2">Detail Project</th>
+        </tr>
+        <tr>
+          <th>Teknologi</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Website MBG</td>
+          <td>Figma</td>
+          <td rowspan="2">Selesai</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Membuat Game Edukasi</td>
+          <td>Godot</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sistem Data Mahasiswa</td>
+          <td>Python & MySQL</td>
+          <td>Dalam Pengembangan</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Form Registrasi Mahasiswa</h1>
+    <form action="#" method="post">
+      <label for="nim">NIM</label><br />
+      <input type="text" id="nim" name="nim" required /><br /><br />
+      <label for="nama">Nama Lengkap</label><br />
+      <input type="text" id="nama" name="nama" required /><br /><br />
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="prodi">Program Studi</label><br />
+      <select id="prodi" name="prodi">
+        <option value="informatika">Informatika</option>
+        <option value="sistem-informasi">Sistem Informasi</option>
+        <option value="teknologi-informasi"
+          >Teknologi Informasi</option
+        > </select
+      ><br /><br />
+      <label for="alamat">Alamat</label><br />
+      <textarea id="alamat" name="alamat" rows="4" cols="40"></textarea
+      ><br /><br />
+      <button type="submit">Daftar</button>
+      <button type="reset">Bersihkan</button>
+    </form>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Pesan</title>
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 30px;
+            }
+    
+            h1 {
+                font-size: 24px;
+            }
+    
+            table {
+                width: 80%;
+                border-collapse: collapse;
+            }
+    
+            th, td {
+                border: 2px solid #777;
+                padding: 12px;
+            }
+    
+            th {
+                text-align: center;
+                font-size: 20px;
+            }
+    
+            td:first-child {
+                width: 25%;
+                text-align: right;
+                font-weight: bold;
+            }
+    
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="date"],
+            select,
+            textarea {
+                padding: 6px;
+                width: 60%;
+                box-sizing: border-box;
+            }
+    
+            textarea {
+                height: 150px;
+                resize: both;
+            }
+    
+            .radio {
+                width: auto;
+            }
+    
+            .checkbox {
+                width: auto;
+            }
+    
+            .tombol {
+                text-align: center;
+            }
+    
+            button {
+                padding: 6px 15px;
+                margin: 3px;
+            }
+    
+            .catatan {
+                font-style: italic;
+                margin-top: 20px;
+            }
+    
+            .home {
+                margin-top: 25px;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <h1>Form Pesan</h1>
+    
+        <form>
+    
+            <table>
+    
+                <!-- Judul tabel -->
+                <tr>
+                    <th colspan="2">Form Data Kontak</th>
+                </tr>
+    
+                <!-- Nama -->
+                <tr>
+                    <td>Nama Lengkap:</td>
+                    <td>
+                        <input type="text" name="nama">
+                    </td>
+                </tr>
+    
+                <!-- Email -->
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+    
+                <!-- Nomor Telepon -->
+                <tr>
+                    <td>Nomor Telepon:</td>
+                    <td>
+                        <input type="tel" name="telepon">
+                    </td>
+                </tr>
+    
+                <!-- Jenis Kelamin -->
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input class="radio" type="radio" name="gender" value="Laki-laki">
+                        Laki-laki
+    
+                        <input class="radio" type="radio" name="gender" value="Perempuan">
+                        Perempuan
+                    </td>
+                </tr>
+    
+                <!-- Tanggal Lahir -->
+                <tr>
+                    <td>Tanggal Lahir:</td>
+                    <td>
+                        <input type="date" name="tanggal_lahir">
+                    </td>
+                </tr>
+    
+                <!-- Topik Pesan -->
+                <tr>
+                    <td>Topik Pesan:</td>
+                    <td>
+                        <select name="topik">
+                            <option value="diskusi">Diskusi</option>
+                            <option value="pertanyaan">Pertanyaan</option>
+                            <option value="saran">Saran</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <!-- Jenis Pesan -->
+                <tr>
+                    <td>Jenis Pesan:</td>
+                    <td>
+                        <input class="radio" type="radio" name="jenis_pesan" value="Pertanyaan">
+                        Pertanyaan
+    
+                        <input class="radio" type="radio" name="jenis_pesan" value="Saran">
+                        Saran
+    
+                        <input class="radio" type="radio" name="jenis_pesan" value="Lainnya">
+                        Lainnya
+                    </td>
+                </tr>
+    
+                <!-- Pesan -->
+                <tr>
+                    <td>Pesan:</td>
+                    <td>
+                        <textarea name="pesan"></textarea>
+                    </td>
+                </tr>
+    
+                <!-- Salinan Pesan -->
+                <tr>
+                    <td>Salinan Pesan:</td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="salinan">
+                        Kirim salinan pesan ke email saya
+                    </td>
+                </tr>
+    
+                <!-- Tombol -->
+                <tr>
+                    <td colspan="2" class="tombol">
+                        <button type="submit">Kirim Pesan</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+    
+            </table>
+    
+        </form>
+    
+        <p class="catatan">
+            Catatan: karena website ini hanya menggunakan HTML, form belum terhubung ke server/database.
+        </p>
+    
+        <hr>
+    
+        <p class="home">
+            <a href="index.html">Kembali ke Home</a>
+        </p>
+    
+        <p>© 2026 Naila Herva.</p>
+    
+    </body>
+    </html>
+
+  </body>
+</html>
