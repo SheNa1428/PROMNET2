@@ -1,0 +1,467 @@
+*{margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+    color:navy;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#main-header{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 40px;
+background-color: navy;
+color: #fbb02d;
+}
+
+#main-header1{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: navy;
+    color: #fbb02d;}
+
+#main-header h1{
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+
+.navbar{
+    display: flex;
+    gap:8px;
+}
+
+.nav-btn{
+    color: #fbb02d;
+    text-decoration: none;
+    padding:6px 12px;
+    font-size:13px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    background-color: #caf0f8;
+}
+.hero-text1{
+    color: #03045e;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 40px;
+    color: #03045e;
+    margin-bottom: 20px;
+
+}
+.card-intro{
+    background-color:navy;
+    padding: 20px;                  
+    border: 6px solid #fbb02d; 
+    border-radius: 10px;
+    flex:1;
+    max-width: 800px;
+    color: #caf0f8;
+    transition: all 0.3s ease;
+}
+.card-intro:hover {
+    background-color: #03045e;
+    transform: scale(1.03);
+}
+
+.card-intro1{
+    background-color:navy;
+    padding: 20px;                  
+    border: 6px solid #fbb02d; 
+    border-radius: 10px;
+    color: #caf0f8;
+    width: 1200px;
+    margin: 20px auto;
+
+}
+
+.card-intro p {
+    font-size: 15px;
+    line-height: 2.5;
+    padding: 15px;
+
+ }
+
+.hero-image{
+    width: 250px;                   
+    height: 250px;  
+    max-width: 100%;  
+    object-fit: cover;             
+    border-radius: 50%;             
+    border: 6px solid navy;
+}
+.pasfoto-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+#content-section {
+    display: flex;                 
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 80px;             
+}
+
+#content-section1 {
+    display: flex;                 
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 80px;             
+}
+.content-card {
+    background-color: #fbb02d;
+    padding: 25px;                  
+    border-radius: 12px;
+    flex: 1;                        
+    border: 5px solid #caf0f8;
+    box-shadow: black;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.content-card:hover {
+    background-color: #ffd56a;
+    transform: scale(1.03);
+}
+
+.content-card1 {
+    background-color: navy;
+    color: #caf0f8;
+    padding: 25px;                  
+    border-radius: 12px;
+    flex: 1;                        
+    border: 5px solid #caf0f8;
+    box-shadow: black;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card-intro1:hover {
+    background-color: #03045e;
+    transform: scale(1.03);
+}
+.content-card2 {
+    background-color:navy;
+    color: #fbb02d;
+    padding: 25px;                  
+    border-radius: 12px;
+    flex: 1;                        
+    border: 5px solid #caf0f8;
+    box-shadow: black;
+}
+
+.content-card p{
+    font-size: 20px;
+    text-align: center;             
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.content-card h3{ 
+    text-align: center; 
+}
+.skill-tags {
+    display: flex;                  
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;               
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: navy;      
+    color: #caf0f8;
+    padding: 10px 16px;            
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;      
+}
+.tag:hover {
+    background-color: #03045e;
+    color: #fbb02d;
+    transform: scale(1.05);
+}
+.tombol-melayang {
+    position: fixed;                
+    bottom: 20px;
+    right: 20px;
+    background-color: skyblue;      
+    color: navy;
+    padding: 12px 22px;            
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+}
+
+.tombol-melayang:hover {
+    background-color: brown;     
+}
+
+#footer-utama {
+    
+    color:navy;
+    padding: 20px 40px;            
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#savior{
+    margin:20px; 
+    text-align: center;
+
+}
+.savior h2{
+    text-align: center;
+}
+.savior p{
+    text-align: center;
+}
+
+.deskripsi{
+    background-color: #caf0f8;
+    border-radius: 15px;
+    line-height: 20px;
+    text-align: center;
+   
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: stretch;
+}
+
+
+.deskripsi1{
+    background-color: #caf0f8;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 20px;
+    text-align: center; 
+    border: 6px solid #fbb02d;
+    transition: all 0.3s ease;
+}
+.deskripsi1:hover {
+    background-color: #e6faff;
+    transform: scale(1.03);
+}
+.deskripsi2{
+    background-color: #fbb02d;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 20px;
+    text-align: left; 
+    margin: 50px;        
+    justify-content: center;
+    border: 6px solid #caf0f8;
+
+}
+
+.deskripsi3{
+    background-color: #caf0f8;
+    width: 500px;
+    padding: 50px;
+    border-radius: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin: 50px auto;
+    align-items: center;          
+    border: 6px solid navy;
+    transition: all 0.3s ease;
+}
+.deskripsi3:hover {
+    transform: scale(1.03);
+    background-color: #e6faff;
+}
+
+.deskripsi4{
+    background-color: #caf0f8;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 20px;
+    text-align: center; 
+    margin: 30px;
+    border: 6px solid navy;
+    transition: all 0.3s ease;
+}
+.deskripsi4:hover {
+    background-color: #e6faff;
+    transform: scale(1.05);
+}
+
+.katalog-hobi {
+    margin-top: 50px;
+    padding: 30px 60px;
+}
+
+.hobi-card1 {
+    background-color: navy;
+    color: #caf0f8;
+    width: 850px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    border: 6px solid #fbb02d;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.hobi-card1 h1 {
+    color: #fbb02d;
+    margin-bottom: 25px;}
+
+.hobi-deskripsi {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .gambar-hobi {
+        width: 1000px;
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 5px solid #fbb02d;
+        margin-bottom: 100px;
+        transition: all 0.3s ease;
+    }
+    .gambar-hobi:hover {
+        transform: scale(1.03);
+    }
+
+    .hobi-item {
+        background-color: #caf0f8;
+        color: navy;
+        border: 4px solid #fbb02d;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .hobi-item:hover {
+        background-color: #fbb02d;
+        color: navy;
+        transform: scale(1.03);
+    }
+    
+    .hobi-item h3 {
+        color: navy;
+        margin-bottom: 12px;
+    }
+    
+    .hobi-item p {
+        font-size: 14px;
+        line-height: 1.6;}
+
+#footer-utama {
+    color:#fbb02d;
+    padding: 20px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.form-pesan {
+    width: 800px;
+    max-width: 95%;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #caf0f8;
+    border: 6px solid navy;
+    border-radius: 15px;
+    text-align: center
+}
+
+.form-pesan h2 {
+    text-align: center;
+    color: navy;
+    margin-bottom: 25px;
+}
+
+.tabel-form {
+    width: 100%;
+    border-collapse: collapse;
+    color: navy;
+}
+
+.tabel-form td {
+    border: 2px solid navy;
+    padding: 12px;
+}
+
+.tabel-form .label {
+    width: 30%;
+    text-align: left;
+    background-color: #fbb02d;
+}
+
+.tabel-form .input {
+    width: 70%;
+    text-align: left;
+}
+
+
+.tabel-form textarea {
+    resize: vertical;
+}
+
+.form-tombol {
+    text-align: center;
+    background-color: #caf0f8;
+}
+
+.form-tombol input {
+    padding: 8px 20px;
+    margin: 5px;
+    border: 2px solid navy;
+    border-radius: 6px;
+    background-color: navy;
+    color: #fbb02d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.catatan-form {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: navy;
+}
+
+.form-pesan {
+    transition: all 0.3s ease;
+}
+
+.form-pesan:hover {
+    background-color: #e6faff;
+    transform: scale(1.03);
+}
